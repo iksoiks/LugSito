@@ -7,6 +7,9 @@ module.exports = function (db, cb) {
     db.load("./db_pages.js", function (err) {
         checkError(cb, err);
     });
+    db.load("./db_guides.js", function (err) {
+        checkError(cb, err);
+    });
     //var Stop = db.models.stop;
     //var Line = db.models.line;
     //
